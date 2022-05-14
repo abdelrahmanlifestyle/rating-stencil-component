@@ -7,7 +7,7 @@ import { Component, Prop, State, h } from '@stencil/core';
 })
 export class MyRatingComponent {
   @Prop() maxValue: number = 5;
-  @Prop() value: number = 0;
+  @Prop({ mutable: true }) value: number = 0;
 
   @State() starList: Array<object> = [];
 
