@@ -60,6 +60,7 @@ declare namespace LocalJSX {
     }
     interface MyRating {
         "maxValue"?: number;
+        "onRatingUpdated"?: (event: CustomEvent<any>) => void;
         "value"?: number;
     }
     interface IntrinsicElements {
